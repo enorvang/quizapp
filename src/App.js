@@ -1,10 +1,10 @@
 import React, { useState, useEffect } from 'react';
-import questionServices from './services/questionServices';
+import quizServices from './services/quizServices';
 
 
 
 const App = () => {
-  const [questions, setQuestions] = useState([]);
+  const [quiz, setQuiz] = useState([]);
 
 
 
