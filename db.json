@@ -1,0 +1,28 @@
+{
+  "questions": [
+    {
+      "id": 1,
+      "question": "Hvor lang er en meter?",
+      "alternatives": [
+        "1 cm", "2cm", "100 cm"
+      ],
+      "created": "2020-04-30T17:30:31.098Z"
+    },
+    {
+      "id": 2,
+      "question": "Hva er en meter?",
+      "alternatives": [
+        "En måleenhet", "Et substantiv", "100 cm"
+      ],
+      "created": "2020-04-30T17:30:31.098Z"
+    },
+    {
+      "id": 3,
+      "question": "Hvor mange meter er det i to meter?",
+      "alternatives": [
+        "1", "2", "3"
+      ],
+      "created": "2020-04-30T17:30:31.098Z"
+    }
+  ]
+}
