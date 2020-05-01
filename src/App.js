@@ -15,13 +15,26 @@ const App = () => {
       })
   }, [])
 
+  const loadingtext = "Loading question..."
+
+  const display = () => {
+    if(quiz.length === 0){
+      return (
+        <div>{loadingtext}</div>
+      )
+    }else {
+      return (
+        <Question question={quiz[0]}/>
+      )
+    }
+  }
   
   
 
   return (
     <div>
       <h1>QuizApp</h1>
-      <Question question={quiz}/>
+      {display()}
     </div>
   )
 }

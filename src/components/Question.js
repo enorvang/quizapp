@@ -3,24 +3,20 @@ import React from 'react'
 const Question = ({ question }) => {
   console.log("inside question.js", question)
 
-
-
   return (
     <div>
-      <ul>{question.map((q, i) =>
-        <li key={i}>
-          {q.question}
-          <ul>
-            {q.alternatives.map((alt, i) => 
-              <li key={i}>
-                {alt}
-              </li>)}
-          </ul>
-        </li>
-      )}
+      {question.question}
+      <ul>
+        {question.alternatives.map((alt, i) => 
+          <li key={i}>
+            {alt}
+          </li>)}
       </ul>
+      <button>Forrige</button>
+      <button>Neste</button>
     </div>
   )
+
 }
 
 export default Question
