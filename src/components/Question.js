@@ -1,7 +1,7 @@
 import React from 'react'
 
-const Question = ({ question }) => {
-  console.log("inside question.js", question)
+const Question = ({ question, handlePrevClick, handleNextClick }) => {
+  //console.log("inside question.js", question)
 
   return (
     <div>
@@ -12,8 +12,8 @@ const Question = ({ question }) => {
             {alt}
           </li>)}
       </ul>
-      <button>Forrige</button>
-      <button>Neste</button>
+      <button onClick={handlePrevClick}>Forrige</button>
+      <button onClick={handleNextClick}>Neste</button>
     </div>
   )
 
